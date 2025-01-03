@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    nav a:first-child {
+        padding: 5px 10px;
+        background-color: #ffd700;
+        border-radius: 5px;
+    }
+    @media (prefers-color-scheme: dark) {
+    nav a:first-child {
+        background-color: #ffd700;
+        color: #1e1e1e;
+    }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo-medium.png" alt="Logo" srcset="images/logo-small.png 50w, images/logo-medium.png 80w, images/logo-large.png 110w"></a>
+        <nav>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">My Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <div class="grid-container-2">
+        <button id="prev">&larr;</button>
+        <div class="carousel-image">
+            <img id="carousel-image" src="images/image1-medium.png" alt="Carousel Image" srcset="images/image1-small.png 480w, images/image1-medium.png 960w, images/image1-large.png 1440w">
+        </div>
+        <div class="carousel-text" id="carousel-text">
+            <p>This is a description for the first image. You can replace this text with your own content.</p>
+        </div>
+        <button id="next">&rarr;</button>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <footer>
+        <a href="mailto:kt2838@stern.nyu.edu">
+            <span>kt2838@stern.nyu.edu</span>
+        </a>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/karen-toyber-a5b867203/"><button>LinkedIn</button></a>
+            <a href="https://docs.google.com/document/d/1L35cW7mJLMFsN_S55VV8U26ynwWeow1XaWBriKEuBOQ/edit?usp=sharing"><button>Resume</button></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Toyber Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #d3d3d3;
+            border-radius: 10px;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .grid-item.text {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            background-color: #d3d3d3;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #b3b3b3;
+        }
+
+        @media (max-width: 768px) {
+            .main-heading h1 {
+                font-size: 28px;
+            }
+
+            .main-heading h2 {
+                font-size: 18px;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .buttons {
+                margin-top: 10px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .main-heading {
+                background-color: #1e1e1e;
+                box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            }
+
+            .main-heading h2 {
+                color: #aaaaaa;
+            }
+
+            .grid-item {
+                background-color: #333333;
+                color: #ffffff;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo-medium.png" alt="Logo" srcset="images/logo-small.png 50w, images/logo-medium.png 80w, images/logo-large.png 110w"></a>
+        <nav>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">My Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <div class="main-heading">
+        <h1>Karen Toyber</h1>
+        <h2>Sophomore studying Accounting and Entrepreneurship at NYU Stern</h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="images/karen-headshot.png" srcset="images/karen-headshot.png 1x, images/karen-headshot2x.png 2x, images/karen-headshot3x.png 3x" alt="Headshot of Karen">
+        </div>
+        <div class="grid-item text">
+            <p>Hey there! I’m Karen, a sophomore at NYU Stern studying Accounting and Entrepreneurship with a joint minor in Mathematics and Computer Science.
+            <br>
+            <br>
+            I'm interested in exploring the intersections between business, technology, and entrepreneurship and currently looking at Product Management roles. </p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:kt2838@stern.nyu.edu">
+            <span>kt2838@stern.nyu.edu</span>
+        </a>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/karen-toyber-a5b867203/"><button>LinkedIn</button></a>
+            <a href="https://docs.google.com/document/d/1L35cW7mJLMFsN_S55VV8U26ynwWeow1XaWBriKEuBOQ/edit?usp=sharing"><button>Resume</button></a>
+        </div>
+    </footer>
+</body>
+</html>
